@@ -8,10 +8,8 @@
 // Configuration - modules-left
 
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/window",
-        "custom/workspaces"
+        "custom/workspaces",
+        "custom/focused-window"
     ],    
     "custom/launcher": {
     	"format":"󰀻 ",
@@ -46,6 +44,9 @@
     "custom/workspaces": {
         "exec": "~/.config/niri/niri-workspaces.sh \"$WAYBAR_OUTPUT_NAME\"",
         "signal": 8
+    },
+    "custom/focused-window": {
+        "exec": "~/.config/niri/niri-focused-window.sh"
     },
 
 // Configuration - modules-right
@@ -96,11 +97,11 @@
         "on-click": "~/.config/waybar/scripts/keyhint.sh",
     },
     "cpu": {
-        "format": "f{usage: >3}%",
+        "format": "{usage: >3}%",
         "on-click": "footclient -T waybar_btop -e btop"
     },
     "memory": {
-        "format": "j{: >3}%",
+        "format": "{: >3}%",
         "on-click": "footclient -T waybar_btop -e btop"
     },
     "temperature": {
