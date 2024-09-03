@@ -202,7 +202,7 @@ layout {
     spawn-at-startup "foot" "--server"
     spawn-at-startup "swayidle" "-C" "/home/jesse/.config/swayidle.conf"
     spawn-at-startup "mako"
-    spawn-at-startup "wlsunset" "-l" "51.3" "-L" "-144.5"
+    spawn-at-startup "wlsunset" "-l" "50" "-L" "-100"
     spawn-at-startup "xwayland-satellite"
     spawn-at-startup "konsole"
     spawn-at-startup "env" "DISPLAY=:1" "schildichat-desktop"
